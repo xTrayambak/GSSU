@@ -15,40 +15,40 @@ logging.getLogger().setLevel(logging.DEBUG)
 argument_parser = argparse.ArgumentParser(description = "GSSU: Simple Server Utility")
 
 argument_parser.add_argument(
-    "address",
-    metavar = "a",
+    "--address",
+    metavar = "-a",
     type = str,
     help = f"The address at which the server will listen for traffic.",
     nargs = "?"
 )
 
 argument_parser.add_argument(
-    "port",
-    metavar = "p",
+    "--port",
+    metavar = "-p",
     type = int,
     help = f"The port at which the server will listen for traffic.",
     nargs = "?"
 )
 
 argument_parser.add_argument(
-    "verbose",
-    metavar = "v",
+    "--verbose",
+    metavar = "-v",
     type = str,
     help = f'Whether or not to log "unnecessary" messages. (expects y or n)',
     nargs = "?"
 )
 
 argument_parser.add_argument(
-    "buffer",
-    metavar = "b",
+    "--buffer",
+    metavar = "-b",
     type = int,
     help = f"Buffer size of packets expected.",
     nargs="?"
 )
 
 argument_parser.add_argument(
-    "help",
-    metavar = "h",
+    "--help",
+    metavar = "-h",
     type = None,
     help = f'Show the help menu. (gssu_showhelp)',
     nargs = "?"
